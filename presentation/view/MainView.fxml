@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.control.MainUIController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="menuClose" mnemonicParsing="false" onAction="#exit" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Customer">
+            <items>
+              <MenuItem fx:id="menuCreateReservation" mnemonicParsing="false" onAction="#createReservation" text="CreateResevation" />
+                  <MenuItem fx:id="menuCreateCustomer" mnemonicParsing="false" onAction="#createCustomer" text="CreateCustomer" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Employee">
+            <items>
+                  <MenuItem fx:id="menuListVehicles" mnemonicParsing="false" onAction="#listVehicles" text="ListVehiclesByBranchOffice" />
+              <MenuItem fx:id="menuListBranchOffices" mnemonicParsing="false" onAction="#listBranchOffices" text="ListBOReservations" />
+                  <MenuItem fx:id="menuPickUpReservation" mnemonicParsing="false" onAction="#pickUpReservation" text="ReservedVehiclePickUp" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Admin" />
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

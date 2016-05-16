@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="387.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.control.PickUpReservationUIController">
+   <children>
+      <Button fx:id="accept" layoutX="519.0" layoutY="340.0" mnemonicParsing="false" text="Accept" />
+      <Button fx:id="cancel" layoutX="586.0" layoutY="340.0" mnemonicParsing="false" text="Cancel" />
+      <TableView fx:id="table1" layoutX="4.0" prefHeight="129.0" prefWidth="627.0">
+        <columns>
+          <TableColumn fx:id="column1" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="column2" prefWidth="75.0" text="PickUpDate" />
+            <TableColumn fx:id="column3" prefWidth="75.0" text="ReturnDate" />
+            <TableColumn fx:id="column4" prefWidth="75.0" text="Category" />
+            <TableColumn fx:id="column5" prefWidth="75.0" text="RentalModality" />
+            <TableColumn fx:id="column6" prefWidth="75.0" text="dni" />
+            <TableColumn fx:id="column7" prefWidth="75.0" text="Customer name" />
+        </columns>
+      </TableView>
+      <Button fx:id="vehicles" layoutX="35.0" layoutY="145.0" mnemonicParsing="false" text="Show Vehicles" />
+      <TableView fx:id="table2" layoutX="22.0" layoutY="179.0" prefHeight="200.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="column8" prefWidth="75.0" text="Plate number" />
+          <TableColumn fx:id="column9" prefWidth="75.0" text="Km" />
+            <TableColumn fx:id="column10" prefWidth="75.0" text="Category" />
+        </columns>
+      </TableView>
+      <Label layoutX="290.0" layoutY="206.0" text="Insurance" />
+      <Label layoutX="290.0" layoutY="243.0" text="Km" />
+      <Label layoutX="290.0" layoutY="279.0" text="Tank Level" />
+      <TextField fx:id="insurance" layoutX="352.0" layoutY="202.0" promptText="IE: full" />
+      <TextField fx:id="km" layoutX="353.0" layoutY="239.0" promptText="double" />
+      <TextField fx:id="tankLevel" layoutX="353.0" layoutY="275.0" promptText="double" />
+   </children>
+</AnchorPane>
